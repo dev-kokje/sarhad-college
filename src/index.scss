@@ -1,0 +1,339 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+//Most Used Colors
+$color-primary: #339933;
+$color-primary2: #267326;
+$color-secondary: #f7f7f7;
+$color-white: #ffffff;
+
+//Classes For Backgrounds
+.background-primary2, .bg-primary2 {
+  background-color: $color-primary;
+}
+
+.bg-gray {
+  background-color: #f5f5f5;
+}
+
+//Classes For Font Colors
+.font-primary {
+  color: $color-primary !important;
+}
+
+.font-white {
+  color: $color-white !important;
+}
+
+//Classes For Font Sizes
+.font-xs {
+  font-size: .2rem !important;
+}
+
+.font-sm {
+  font-size: .8rem !important;
+}
+
+.font-lg {
+  font-size: 2rem !important;
+}
+
+.blinkMe {
+  background-color: yellow;
+  animation: blinker 1s linear infinite;
+}
+
+.zindex-1000 {
+  z-index: 1000 !important;
+}
+
+.zindex-900 {
+  z-index: 900 !important;
+}
+
+@keyframes blinker {
+  50% {
+      opacity: 0;
+  }
+}
+
+//Top-Bar Classes
+.top-bar {
+  height: 5px;
+  padding: 0px !important;
+}
+
+.navbar-toggler {
+  max-height: 34px !important;
+}
+
+//LogoBar classes
+.sarhad-logo {
+  height: 120px;
+  width: auto;
+}
+
+.navLink {
+  //border-bottom: 2px solid #fff !important;
+}
+
+.navLink:hover {
+    //border-bottom: 2px solid #0c2d62 !important;
+}
+
+//Home Page Classes
+.showCaseRow {
+  /* box-shadow: 1px 1px 10px rgb(12, 45, 98); */
+  border-bottom: 1px solid#7d838d;
+  padding: 0px 10px;
+}
+
+.showCaseImage {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.quickOptionsPanel {
+  min-height: 50px;
+  box-shadow: 0px 0px 5px #0c2d62;
+  border-bottom: 5px solid #fff;
+}
+
+.quickOptionsPanel:hover {
+  cursor: pointer;
+  border-bottom: 5px solid #fff;
+} 
+
+.quickOptionsImg {
+  height: 40px;
+}
+
+.announcements {
+  background-color: #ececec;
+}
+
+.NoticeBoard {
+  padding: 50px 10px;
+  background-image: url('assets/img/bldg-bg-md.png') !important;
+  background-size: cover;
+}
+
+
+.admissionPanel {
+  height: 300px;
+}
+
+.aboutSarhad {
+}
+
+.aboutIcon {
+  border: 1px solid #177ce9;
+  font-size: 50px;
+}
+
+.hrText {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: .5;
+}
+.hrText::before {
+    content: '';
+    background: linear-gradient(to right, transparent, #818078, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+  }
+.hrText::after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: black;
+  padding: 0 .5em;
+  line-height: 1.5em;
+  color: #818078;
+  background-color: #fcfcfa;
+}
+
+.eventImg {
+  max-height: 70px;
+}
+
+.topHightlights {
+  margin-top: 0px;
+}
+
+.topHightlightBox {
+  height: 150px;
+}
+
+.announcementsBoard {
+  background-color: #eee;
+}
+
+.announcementsBoardCol {
+  height: 70px;
+}
+
+.sarhadVid {
+  width: 100%;
+  height: 250px;
+}
+
+.academicIcon {
+  font-size: 50px !important;
+}
+
+.academicUnit {
+  border-bottom: 2px solid #339933 !important;
+}
+
+.academicUnit:hover {
+  cursor: pointer;
+  border-color:  #339933 !important;
+}
+
+.admissionRow {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.testimonialImage {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.testimonialCard {
+  border-bottom: 2px solid $color-primary !important;
+}
+
+.footer {
+  margin-top: 2px solid $color-primary !important;
+  background-color: #fff !important;
+}
+
+.footerLogo {
+  max-height: 80px;
+  border: 5px solid #fff;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.copyrightBar {
+  height: 40px;
+  background-color: $color-primary;
+}
+
+.headRow1 {
+  background-color: $color-primary !important;
+  height: 130px;
+}
+
+.headRow2 {
+  height: 130px;
+  background-image: linear-gradient(to right, rgba(51, 153, 51, 1), rgba(51, 153, 51, 0.3)),
+      url('assets/img/sarhad-title-bg.png');
+  background-size: cover;
+  
+}
+
+.sideMenuBar {
+  background-color: #fff;
+  border-bottom: 1px solid #999;
+}
+
+.nav-link.active {
+  border-radius: 0px !important;
+  color: $color-primary !important;
+  background-color: #fff !important;
+}
+
+.map {
+  width: 100%;
+  height: 200px;
+}
+
+.menutab {
+  width: 100%;
+  border-radius: 1px;
+  margin-bottom: 2px;
+}
+
+.vertical-nav-btn {
+  background-color: $color-primary2 !important;
+}
+
+.marquee {
+  height: 30px;
+  overflow: hidden;
+  position: relative;
+  background: #f3f3f3;
+  color: #333;
+  width: 100%;
+}
+
+@-moz-keyframes scroll-left {
+  0% {
+      -moz-transform: translateX(80%);
+  }
+  100% {
+      -moz-transform: translateX(-80%);
+  }
+}
+
+@-webkit-keyframes scroll-left {
+  0% {
+      -webkit-transform: translateX(80%);
+  }
+  100% {
+      -webkit-transform: translateX(-80%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+  }
+  100% {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+  }
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.enqButton {
+  position: fixed;
+  z-index: 999;
+  bottom: 0px;
+  right: 100px;
+  border-radius: 5px 5px 0px 0px;
+}
